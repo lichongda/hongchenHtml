@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="gbk">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>开始使用Layui</title>
+  <link rel="stylesheet" href="../../../hongchen/layui/css/layui.css">
+</head>
+<body>
+ <form  class="layui-form" action="">
+	<div class="layui-form-item">
+		<label class="layui-form-label">角色名称：</label>
+		<div class="layui-input-block">
+			<input type="text" name="title" lay-verify="title" required  autocomplete="off" placeholder="请输入标题" class="layui-input">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">备注：</label>
+		<div class="layui-input-block">
+			<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+		</div>
+	</div>
+	
+	<div class="layui-form-item">
+		<label class="layui-form-label">角色：</label>
+		<div class="layui-input-block">
+			<div class="layui-form">
+				<table class="layui-table" lay-skin="line">
+				  <colgroup>
+					<col width="160">
+					<col >
+				  </colgroup>
+				 
+				  <thead>
+					<tr>  
+					  <th><input type="checkbox" name="" lay-skin="primary" lay-filter="parentMenu" value="0" title="日志管理"/></th>
+					  <th><th/>
+					</tr> 
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" lay-filter="subMenu" title="栏目管理" >
+					  </td>
+					  <td>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="1" lay-filter="buttonMenu" title="添加" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="2" lay-filter="buttonMenu" title="删除" >	
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="3" lay-filter="buttonMenu" title="修改" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="4" lay-filter="buttonMenu" title="查询" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="5" lay-filter="buttonMenu" title="导入" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="6" lay-filter="buttonMenu" title="导出" ><br>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="7" lay-filter="buttonMenu" title="审核 " >
+					  </td>
+					</tr>
+					<tr>
+					  <td>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" lay-filter="subMenu" title="栏目管理" >
+					  </td>
+					  <td>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="1" lay-filter="buttonMenu" title="添加" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="2" lay-filter="buttonMenu" title="删除" >	
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="3" lay-filter="buttonMenu" title="修改" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="4" lay-filter="buttonMenu" title="查询" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="5" lay-filter="buttonMenu" title="导入" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="6" lay-filter="buttonMenu" title="导出" ><br>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="7" lay-filter="buttonMenu" title="审核 " >
+					  </td>
+					</tr>
+				  </tbody>
+				  
+				   <thead>
+					<tr>  
+					  <th><input type="checkbox" name="" lay-skin="primary" lay-filter="parentMenu" value="0" title="日志管理"/></th>
+					  <th><th/>
+					</tr> 
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" lay-filter="subMenu" title="栏目管理" >
+					  </td>
+					  <td>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="1" lay-filter="buttonMenu" title="添加" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="2" lay-filter="buttonMenu" title="删除" >	
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="3" lay-filter="buttonMenu" title="修改" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="4" lay-filter="buttonMenu" title="查询" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="5" lay-filter="buttonMenu" title="导入" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="6" lay-filter="buttonMenu" title="导出" ><br>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="7" lay-filter="buttonMenu" title="审核 " >
+					  </td>
+					</tr>
+				
+				  </tbody>
+				   <thead>
+					<tr>  
+					  <th><input type="checkbox" name="" lay-skin="primary" lay-filter="parentMenu" value="0" title="日志管理"/></th>
+					  <th><th/>
+					</tr> 
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" lay-filter="subMenu" title="栏目管理" >
+					  </td>
+					  <td>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="1" lay-filter="buttonMenu" title="添加" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="2" lay-filter="buttonMenu" title="删除" >	
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="3" lay-filter="buttonMenu" title="修改" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="4" lay-filter="buttonMenu" title="查询" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="5" lay-filter="buttonMenu" title="导入" >
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="6" lay-filter="buttonMenu" title="导出" ><br>
+						<input type="checkbox" name="like1[write]" lay-skin="primary" value="7" lay-filter="buttonMenu" title="审核 " >
+					  </td>
+					</tr>
+				
+				  </tbody>
+				 
+				</table>
+			</div>
+		</div>
+	</div>
+ </form>
+
+
+	
+ 
+<script src="../../../hongchen/layui/layui.js"></script>
+<script src='../../../hongchen/layui/res/js/modules/constant.js' type='text/javascript'></script>
+<script src='../../../hongchen/layui/res/js/modules/asynchronous.js' type='text/javascript'></script>
+</body>
+<script type="text/javascript">
+	layui.config({
+		base: '../../../hongchen/layui/res/js/modules/'
+	});
+	//
+</script>
+<!-- layui规范化用法 -->
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="gbk">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>开始使用Layui</title>
+  <link rel="stylesheet" href="../../../hongchen/layui/css/layui.css">
+      <style>
+        .layui-btn-small {
+            padding: 0 15px;
+        }
+
+        .layui-form-checkbox {
+            margin: 0;
+        }
+
+        tr td:not(:nth-child(0)),
+        tr th:not(:nth-child(0)) {
+            text-align: center;
+        }
+
+        #dataConsole {
+            text-align: center;
+        }
+        /*分页页容量样式*/
+        /*可选*/
+        .layui-laypage {
+            display: block;
+        }
+
+            /*可选*/
+            .layui-laypage > * {
+                float: left;
+            }
+            /*可选*/
+            .layui-laypage .laypage-extend-pagesize {
+                float: right;
+            }
+            /*可选*/
+            .layui-laypage:after {
+                content: ".";
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+            }
+
+            /*必须*/
+            .layui-laypage .laypage-extend-pagesize {
+                height: 30px;
+                line-height: 30px;
+                margin: 0px;
+                border: none;
+                font-weight: 400;
+            }
+        /*分页页容量样式END*/
+    </style>
+</head>
+<body>
+
+	<div style="margin:0px; background-color: white;width:100%;">
+		<blockquote class="layui-elem-quote">
+			<button class="layui-btn layui-btn-normal" onclick="layui.quartz.addData()">添加定时任务</button>
+			<button class="layui-btn layui-btn-normal" onclick="layui.quartz.async()">同步定时任务</button>
+        </blockquote>
+        <div id="content" style="width: 100%;height: 533px;">
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+				<legend>默认表格</legend>
+			</fieldset>
+			<div id="dataContent" class="layui-form" style="width:100%" >
+			  <table class="layui-table"   id="tableDta">
+				<colgroup>
+				  <col width="150">
+				  <col width="200">
+				  <col width="450">
+				  <col width="150">
+				  <col width="150">
+				  <col width="90">
+				  <col width="300">
+				  <col width="250">
+				  <col width="400">
+				 
+				</colgroup>
+				<thead>
+				  <tr>
+				
+					<th>定时器名称</th>
+					<th>表达式</th>
+					<th>调用类</th>
+					<th>执行方法</th>
+					<th>分组类型</th>
+					<th>状态</th>
+					<th>定时器描述</th>
+					<th>创建时间</th>
+					<th>操作</th>
+				  </tr> 
+				</thead>
+				 <!-- <div  class=""> -->
+					<!-- <tbody> -->
+					  <!-- <tr> -->
+						<!-- <td><input type="checkbox" name="" lay-skin="primary"></td> -->
+						<!-- <td>贤心</td> -->
+						<!-- <td>汉族</td> -->
+						<!-- <td>人生似修行</td> -->
+						<!-- <td>人生似修行</td> -->
+						<!-- <td>人生似修行</td> -->
+						<!-- <td>人生似修行</td> -->
+						<!-- <td>1989-10-14</td> -->
+						<!-- <td>1989-10-14</td> -->
+						<!-- <td><a href="###" onclick="openClose(1,this,1)">展开</a> </td> -->
+						<!-- <td> -->
+							<!-- <button class="layui-btn layui-btn-small layui-btn-normal"><i class="layui-icon">&#xe642;</i></button> -->
+						<!-- </td> -->
+						<!-- <td> -->
+							<!-- <button class="layui-btn layui-btn-small layui-btn-danger"><i class="layui-icon">&#xe640;</i></button> -->
+						<!-- </td> -->
+					  <!-- </tr> -->
+					<!-- </tbody> -->
+				<!-- </div> -->
+			  </table>
+			</div>
+		
+		</div>
+    </div>
+
+ 
+<script src="../../../hongchen/layui/layui.js"></script>
+<script src='../../../hongchen/layui/res/js/modules/constant.js' type='text/javascript'></script>
+<script src='../../../hongchen/layui/res/js/modules/asynchronous.js' type='text/javascript'></script>
+</body>
+<script type="text/javascript">
+	layui.config({ 
+		base: '../../../hongchen/layui/res/js/modules/'
+	}).use('admin/quartz'); 
+</script>
+<!-- layui规范化用法 -->
+
+</html>
