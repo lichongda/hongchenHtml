@@ -1,12 +1,14 @@
 /**
   “Ï≤Ω«Î«Û
 **/      
-var base = {	
+var base = {
    get:function ($, requestUrl, data){  
 	var userId = localStorage.getItem("userId");	
 	var tokenId = localStorage.getItem("tokenId");
 	//var roleId = localStorage.getItem("roleId");
+	
 	var data = data+"&userId="+ userId +"&tokenId="+ tokenId;	
+	
 	var result = "";
 		$.ajax({
 			 type: "GET",
@@ -23,6 +25,8 @@ var base = {
 				 var status = jqXHQ.status;
 				 var error = "{error:"+status+",code=-1}" ;
 				 result =error;
+				 
+				
 			 }
 		});
 		return result;

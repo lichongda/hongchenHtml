@@ -7,7 +7,7 @@ layui.define(['laypage', 'layer', 'form', 'pagesize'], function (exports) {
     var $ = layui.jquery,
         layer = layui.layer,
 		laypage = layui.laypage,
-        form = layui.form();
+        form = layui.form;
 		var laypageId = 'demo7';
         //laypage = layui.laypage;
 		//var laypageId = 'pageNav';

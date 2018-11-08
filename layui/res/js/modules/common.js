@@ -1,10 +1,9 @@
-/** common.js By Beginner Emain:zheng_jinfan@126.com HomePage:http://www.zhengjinfan.cn */
-layui.define(['layer'], function(exports) {
+layui.define(['layer','laypage'], function(exports) {
 	"use strict";
 
 	var $ = layui.jquery,
-		layer = layui.layer;
-
+		layer = layui.layer,
+        laypage = layui.laypage;
 	var common = {
 		/**
 		 * 抛出一个异常错误信息
@@ -23,8 +22,15 @@ layui.define(['layer'], function(exports) {
 				icon: 5
 			});
 			return;
-		}
-	};
+		},
 
+
+
+	};
 	exports('common', common);
+
+
 });
+
+
+

@@ -1,7 +1,7 @@
 layui.use(['layer', 'form'], function() {
 	var layer = layui.layer,
 		$ = layui.jquery,
-		form = layui.form();
+		form = layui.form;
 		
 		
 		//base.hello('Worldffftsfsdgfds!'); //µ¯³öHello World!

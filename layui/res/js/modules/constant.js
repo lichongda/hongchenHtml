@@ -7,7 +7,7 @@ var  hosturl3="http://localhost:8080/";//定义了一个常量
   
 var constants = {//定义了两个常量
 	//hosturl: "http://lichongda.tunnel.2bdata.com/", 		//主机名
-	hosturl: "http://localhost:8080/",				 //主机名
+	hosturl: "http://localhost:8090/",				 //主机名
 	login_url: "login",              						  //登陆URL
 	index_url: "index", 	             					  //首页数据
 
